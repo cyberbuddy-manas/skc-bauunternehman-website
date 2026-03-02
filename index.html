@@ -13383,8 +13383,12 @@
                                 data-widget_type="wgl-double-heading.default">
                                 <div class="elementor-widget-container">
                                     <div class="wgl-double-heading">
-                                        <h3 class="dblh__title-wrapper"><span
-                                                class="dblh__title dblh__title-1"><span>©2026 avelon</span></span></h3>
+                                        <h3 class="dblh__title-wrapper">
+                                                <span class="dblh__title dblh__title-1"><span>©<span id="year"></span> SKC</span></span></h3>
+
+                                                <script>
+                                                document.getElementById('year').textContent = new Date().getFullYear();
+                                                </script>
                                     </div>
                                 </div>
                             </div>
