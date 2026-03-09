@@ -10237,7 +10237,8 @@
                                                         <span
                                                           class="button__content"
                                                           ><span
-                                                            >KONTAKT AUFNEHMEN</span
+                                                            >KONTAKT
+                                                            AUFNEHMEN</span
                                                           ></span
                                                         >
                                                       </button>
@@ -10530,7 +10531,11 @@
               data-element_type="container"
               bis_skin_checked="1"
             >
-              <div class="e-con-inner" bis_skin_checked="1" style="display: flex; gap: 50px">
+              <div
+                class="e-con-inner"
+                bis_skin_checked="1"
+                style="display: flex; gap: 50px"
+              >
                 <div
                   class="elementor-element elementor-element-7c9e6e1 e-con-full animated-slow e-flex e-con e-child animated wgl_fade_left"
                   data-id="7c9e6e1"
@@ -10598,8 +10603,8 @@
                     bis_skin_checked="1"
                   >
                     <p>
-                      Ihre E-Mail-Adresse wird nicht veröffentlicht. Erforderliche Felder
-                      sind mit * gekennzeichnet
+                      Ihre E-Mail-Adresse wird nicht veröffentlicht.
+                      Erforderliche Felder sind mit * gekennzeichnet
                     </p>
                   </div>
                   <div
@@ -10634,7 +10639,8 @@
                             <ul></ul>
                           </div>
                           <form
-                            action="/avelon/contacts/#wpcf7-f569-p998-o4"
+                            id="careerContactForm"
+                            action="#"
                             method="post"
                             class="wpcf7-form init"
                             aria-label="Contact form"
@@ -10642,39 +10648,42 @@
                             data-status="init"
                           >
                             <fieldset class="hidden-fields-container">
+                              <input type="hidden" name="_wpcf7" value="569" />
                               <input
-                                type="hidden"
-                                name="_wpcf7"
-                                value="569"
-                              /><input
                                 type="hidden"
                                 name="_wpcf7_version"
                                 value="6.1.4"
-                              /><input
+                              />
+                              <input
                                 type="hidden"
                                 name="_wpcf7_locale"
-                                value="en_US"
-                              /><input
+                                value="de_DE"
+                              />
+                              <input
                                 type="hidden"
                                 name="_wpcf7_unit_tag"
                                 value="wpcf7-f569-p998-o4"
-                              /><input
+                              />
+                              <input
                                 type="hidden"
                                 name="_wpcf7_container_post"
                                 value="998"
-                              /><input
+                              />
+                              <input
                                 type="hidden"
                                 name="_wpcf7_posted_data_hash"
                                 value=""
                               />
                             </fieldset>
-                            <div class="wgl-wpcf7-wrapper" bis_skin_checked="1">
-                              <div class="row" bis_skin_checked="1">
-                                <div class="wgl_col-12" bis_skin_checked="1">
+
+                            <div class="wgl-wpcf7-wrapper">
+                              <div class="row">
+                                <div class="wgl_col-12">
                                   <span
                                     class="wpcf7-form-control-wrap"
                                     data-name="label-name"
-                                    ><input
+                                  >
+                                    <input
                                       size="40"
                                       maxlength="400"
                                       class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -10684,13 +10693,18 @@
                                       value=""
                                       type="text"
                                       name="label-name"
-                                  /></span>
+                                      id="label-name"
+                                      required
+                                    />
+                                  </span>
                                 </div>
-                                <div class="wgl_col-12" bis_skin_checked="1">
+
+                                <div class="wgl_col-12">
                                   <span
                                     class="wpcf7-form-control-wrap"
                                     data-name="label-email"
-                                    ><input
+                                  >
+                                    <input
                                       size="40"
                                       maxlength="400"
                                       class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
@@ -10700,24 +10714,32 @@
                                       value=""
                                       type="email"
                                       name="label-email"
-                                  /></span>
+                                      id="label-email"
+                                      required
+                                    />
+                                  </span>
                                 </div>
-                                <div class="wgl_col-12" bis_skin_checked="1">
+
+                                <div class="wgl_col-12">
                                   <span
                                     class="wpcf7-form-control-wrap"
                                     data-name="label-website"
-                                    ><input
+                                  >
+                                    <input
                                       size="40"
                                       maxlength="400"
                                       class="wpcf7-form-control wpcf7-text"
                                       aria-invalid="false"
-                                      placeholder="Webseite"
+                                      placeholder="Telefon / Einsatzbereich / Qualifikation"
                                       value=""
                                       type="text"
                                       name="label-website"
-                                  /></span>
+                                      id="label-website"
+                                    />
+                                  </span>
                                 </div>
-                                <div class="wgl_col-12" bis_skin_checked="1">
+
+                                <div class="wgl_col-12">
                                   <span
                                     class="wpcf7-form-control-wrap"
                                     data-name="label-textarea"
@@ -10730,18 +10752,21 @@
                                       aria-invalid="false"
                                       placeholder="Ihre Nachricht"
                                       name="label-textarea"
+                                      id="label-textarea"
                                     ></textarea>
                                   </span>
                                 </div>
-                                <div class="wgl_col-12" bis_skin_checked="1">
+
+                                <div class="wgl_col-12">
                                   <button
+                                    id="careerSubmitBtn"
                                     class="wpcf7-form-control wpcf7-submit has-spinner wgl-widget__button wgl-button wgl-wpcf7-button align-icon-right icon-yes"
                                     type="submit"
                                   >
-                                    <span class="button__content"
-                                      ><span class="icon-wrapper"
-                                        ><span class="wgl-icon"
-                                          ><svg
+                                    <span class="button__content">
+                                      <span class="icon-wrapper">
+                                        <span class="wgl-icon">
+                                          <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="16"
                                             height="14"
@@ -10749,17 +10774,23 @@
                                           >
                                             <path
                                               d="M0 6.78247C0 6.52555 0.102065 6.27914 0.283741 6.09746C0.465416 5.91579 0.711822 5.81372 0.96875 5.81372H12.1927L8.03288 1.65585C7.85097 1.47394 7.74878 1.22723 7.74878 0.969974C7.74878 0.712721 7.85097 0.466004 8.03288 0.284099C8.21478 0.102194 8.4615 0 8.71875 0C8.976 0 9.22272 0.102194 9.40463 0.284099L15.2171 6.0966C15.3073 6.18659 15.3789 6.29349 15.4278 6.41118C15.4766 6.52888 15.5017 6.65505 15.5017 6.78247C15.5017 6.9099 15.4766 7.03607 15.4278 7.15376C15.3789 7.27146 15.3073 7.37836 15.2171 7.46835L9.40463 13.2808C9.22272 13.4628 8.976 13.5649 8.71875 13.5649C8.4615 13.5649 8.21478 13.4628 8.03288 13.2808C7.85097 13.0989 7.74878 12.8522 7.74878 12.595C7.74878 12.3377 7.85097 12.091 8.03288 11.9091L12.1927 7.75122H0.96875C0.711822 7.75122 0.465416 7.64916 0.283741 7.46748C0.102065 7.28581 0 7.0394 0 6.78247Z"
-                                            ></path></svg></span></span
-                                      ><span>KONTAKT AUFNEHMEN</span></span
-                                    ></button
-                                  ><span class="wpcf7-spinner"></span>
+                                            ></path>
+                                          </svg>
+                                        </span>
+                                      </span>
+                                      <span>INITIATIV BEWERBEN</span>
+                                    </span>
+                                  </button>
+                                  <span class="wpcf7-spinner"></span>
                                 </div>
                               </div>
                             </div>
+
                             <div
+                              id="formStatus"
                               class="wpcf7-response-output"
                               aria-hidden="true"
-                              bis_skin_checked="1"
+                              style="display: none; margin-top: 16px"
                             ></div>
                           </form>
                         </div>
@@ -12617,6 +12648,120 @@
         "https://wa.me/" + WA_CONFIG.phone + "?text=" + msg,
         "_blank",
       );
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    const form = document.getElementById("careerContactForm");
+    const submitBtn = document.getElementById("careerSubmitBtn");
+    const statusBox = document.getElementById("formStatus");
+
+    if (!form) return;
+
+    const API_URL = "https://wetap-email-api.vercel.app/send-email";
+
+    const RECEIVER_EMAIL = "rspmanas1@gmail.com"; // change this
+    const RECEIVER_NAME = "SKC Bau";
+    const WEBSITE_NAME = "SKC Bau";
+
+    function showStatus(message, type) {
+      statusBox.style.display = "block";
+      statusBox.textContent = message;
+      statusBox.setAttribute("aria-hidden", "false");
+
+      statusBox.style.padding = "14px 16px";
+      statusBox.style.borderRadius = "10px";
+      statusBox.style.fontSize = "15px";
+      statusBox.style.lineHeight = "1.6";
+
+      if (type === "success") {
+        statusBox.style.background = "#ecfdf3";
+        statusBox.style.color = "#067647";
+        statusBox.style.border = "1px solid #abefc6";
+      } else if (type === "error") {
+        statusBox.style.background = "#fef3f2";
+        statusBox.style.color = "#b42318";
+        statusBox.style.border = "1px solid #fecdca";
+      } else {
+        statusBox.style.background = "#f9fafb";
+        statusBox.style.color = "#344054";
+        statusBox.style.border = "1px solid #eaecf0";
+      }
+    }
+
+    function setLoading(isLoading) {
+      submitBtn.disabled = isLoading;
+      submitBtn.style.opacity = isLoading ? "0.7" : "1";
+      submitBtn.style.pointerEvents = isLoading ? "none" : "auto";
+
+      const label = submitBtn.querySelector(".button__content span:last-child");
+      if (label) {
+        label.textContent = isLoading ? "WIRD GESENDET..." : "INITIATIV BEWERBEN";
+      }
+    }
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const senderName = document.getElementById("label-name")?.value.trim() || "";
+      const senderEmail = document.getElementById("label-email")?.value.trim() || "";
+      const extraInfo = document.getElementById("label-website")?.value.trim() || "";
+      const message = document.getElementById("label-textarea")?.value.trim() || "";
+
+      if (!senderName || !senderEmail) {
+        showStatus("Bitte geben Sie Ihren Namen und Ihre E-Mail-Adresse ein.", "error");
+        return;
+      }
+
+      const finalMessage = `
+Initiativbewerbung über die Website
+
+Zusätzliche Angaben:
+${extraInfo || "Keine Angabe"}
+
+Nachricht:
+${message || "Keine Nachricht angegeben"}
+      `.trim();
+
+      const payload = {
+        toEmail: RECEIVER_EMAIL,
+        toName: RECEIVER_NAME,
+        websiteName: WEBSITE_NAME,
+        senderName: senderName,
+        senderEmail: senderEmail,
+        message: finalMessage
+      };
+
+      try {
+        setLoading(true);
+        showStatus("Ihre Nachricht wird gesendet...", "info");
+
+        const response = await fetch(API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+
+        if (!response.ok || !data.ok) {
+          throw new Error(data.error || "Beim Senden ist ein Fehler aufgetreten.");
+        }
+
+        showStatus("Vielen Dank! Ihre Initiativbewerbung wurde erfolgreich versendet.", "success");
+        form.reset();
+      } catch (error) {
+        showStatus(
+          error.message || "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.",
+          "error"
+        );
+      } finally {
+        setLoading(false);
+      }
     });
   })();
 </script>
